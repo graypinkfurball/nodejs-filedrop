@@ -21,14 +21,14 @@ HTTP_PORT=8081 FILEDROP_DIR=files2 node server.min.js
 
 ### Windows
 `start.bat`
-```
+```bat
 @echo off
 set HTTP_PORT=8081
 set FILEDROP_DIR=files2
 node server.min.js
 ```
 `start.ps1`
-```
+```ps1
 $env:HTTP_PORT=8081
 $env:FILEDROP_DIR=files2
 node server.min.js
