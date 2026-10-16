@@ -261,7 +261,7 @@ server.on('request', (req, res) => {
         filepath = next_free_file(chroot_file(default_filename, files_dir), default_last_index);
       }
 
-      if (fs.dirname(filepath) != files_dir) { throw new Error("subdirectory creation disallowed"); }
+      if (path.dirname(filepath) != files_dir) { throw new Error("subdirectory creation disallowed"); }
 
       fs.writeFileSync(filepath, data);
       console.log(filepath);
